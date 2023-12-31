@@ -1,0 +1,48 @@
+.container{
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left, #fff 50%,#000 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.container:hover {
+    color: #fff;
+    background-position: left;
+  
+}
+.title{
+    margin-left: 20px;
+}
+.navbox{
+    position: absolute;
+    right: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+}
+
+.navbox div{
+    width: auto;
+    padding: 10px 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    
+}
+.navbox1:hover{
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.navbox a{
+    text-decoration: none;
+    color: inherit;
+}

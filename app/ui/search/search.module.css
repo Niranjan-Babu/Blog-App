@@ -1,0 +1,16 @@
+
+.container{
+    
+    width: 400px;
+}
+.input{
+    color: white;
+    background-color: #0d245c;
+    text-indent: 10px;
+    font-size: 18px;
+    height: 40px;
+    border-radius: 20px;
+    width: 400px;
+    outline: none;
+    border: none;
+}

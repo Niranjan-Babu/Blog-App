@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 60vw;
+    margin-top: 50px;
+}
+.form select{
+    margin: 20px 0px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #0d245c;
+    color: white;
+    border: none;
+    text-indent: 5px;
+    font-size: 16px;
+}
+
+.incontent{
+    margin: 50px 0px 50px;
+    min-height: 300px;
+}
+.button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    margin: 50px 0px;
+    font-size: 20px;
+}

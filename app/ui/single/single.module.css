@@ -1,0 +1,27 @@
+.container{
+    min-height: 50vh;
+    margin:50px 100px 50px ;
+    background-color: #B6C4B6;
+    border-radius: 5px;
+}
+.title{
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+}
+.content{
+    
+    margin:0px 100px 0px ;
+    font-weight: 500;
+    word-spacing: 5px;
+}
+.cred{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    margin:50px 100px;
+    gap: 50px;
+    justify-content: center;
+    color: rgba(78, 88, 97, 0.582);
+   
+}
