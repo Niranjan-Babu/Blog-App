@@ -1,7 +1,8 @@
 "use client"
 import {React,useState,useRef} from 'react'
 import { addBlog } from '@/app/lib/action'
-import ReactQuill from 'react-quill';
+import dynamic from 'next/dynamic';
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 import 'react-quill/dist/quill.snow.css';
 import '@/app/globals.css'
 import styles from '@/app/ui/createBlog/createblog.module.css'
