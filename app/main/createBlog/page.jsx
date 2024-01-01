@@ -1,8 +1,7 @@
 "use client"
-import {React,useState,useRef} from 'react'
+import {React,useState,useRef,useMemo } from 'react'
 import { addBlog } from '@/app/lib/action'
 import dynamic from 'next/dynamic';
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 import 'react-quill/dist/quill.snow.css';
 import '@/app/globals.css'
 import styles from '@/app/ui/createBlog/createblog.module.css'
@@ -17,14 +16,8 @@ const CreateBlog = () => {
   const [creatername, setCreatername] = useState('');
   const [createremail, setCreateremail] = useState('');
   const quillRef = useRef(null);
-  const highlightCodeBlocks = () => {
-    const editor = quillRef.current.getEditor();
-    const codeBlocks = editor.container.querySelectorAll('pre code');
-    
-    codeBlocks.forEach((codeBlock) => {
-      codeBlock.classList.add('highlighted-code');
-    });
-  };
+  const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+
   const handleEditorChange = (value) => {
     setEditorValue(value);
     
@@ -83,7 +76,14 @@ const CreateBlog = () => {
               required/>
               
         
-        <ReactQuill name="content" value={editorValue} onChange={handleEditorChange} className={styles.incontent} required/>
+        <ReactQuill 
+        name="content" 
+        ref={quillRef}
+         value={editorValue}
+          onChange={handleEditorChange}
+           className={styles.incontent}
+           
+            />
         
         <button type="submit" className={styles.button}>Save</button>
 
