@@ -12,7 +12,8 @@ const Single = async({params}) => {
           <h1 className={styles.title}>
             {a.title}
           </h1>
-          <div className={styles.content} dangerouslySetInnerHTML={{ __html: a.content }} />
+          <div className={styles.content} dangerouslySetInnerHTML={{__html: a.content}} />
+          
            
           <div className={styles.cred}>
             <div></div>

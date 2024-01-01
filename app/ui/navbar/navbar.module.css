@@ -3,16 +3,13 @@
     height: 80px;
     border-bottom: 2px solid black;
     display: flex;
+    color: #fff;
     align-items: center;
-    background: linear-gradient(to left, #fff 50%,#000 50%) right;
+    background: linear-gradient(to left, #000 50%,#fff 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
 }
-.container:hover {
-    color: #fff;
-    background-position: left;
-  
-}
+
 .title{
     margin-left: 20px;
 }

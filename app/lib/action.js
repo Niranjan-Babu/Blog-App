@@ -6,17 +6,15 @@ import {revalidatePath} from "next/cache"
 
 export const addBlog = async (formData) =>{
    
-    const {title,content,category,creatername,createremail }=formData;
+    const {title,content,creatername,createremail }=formData;
     
     try{
         connectToDb();
         const newBlog = new Blog({
             title,
             content,
-            category,
             creatername,
             createremail
-
         });
         await newBlog.save();
         console.log(newBlog);

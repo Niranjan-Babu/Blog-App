@@ -16,17 +16,20 @@
     height: 60px;
     border-radius: 10px;
     outline: none;
-    background-color: #0d245c;
-    color: white;
-    border: none;
+    background-color: #fff;
+   
+    border: 1px solid rgba(128, 128, 128, 0.568);
     text-indent: 5px;
     font-size: 16px;
 }
-
 .incontent{
-    margin: 50px 0px 50px;
-    min-height: 300px;
+ min-height: 200px
 }
+.incontent ::placeholder{
+
+    margin: 10px;
+}
+
 .button{
     width: 100px;
     height: 50px;
