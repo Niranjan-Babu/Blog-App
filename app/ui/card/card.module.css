@@ -4,14 +4,14 @@
     height: 300px;
     margin-top: 20px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-   color: white;
-   background: linear-gradient(to left, #3498db 50%,#0d245c 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+   color: white !important;
+   background: linear-gradient(to left, #3498db 50%,#0d245c 50%) right !important;
+    background-size: 200% !important;
+    transition: .5s ease-out !important;
 }
 .container:hover {
     background-position: left;
