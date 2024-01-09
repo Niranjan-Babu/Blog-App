@@ -35,3 +35,62 @@
 .Link{
     color: white;
 }
+
+@media only screen and (max-width:1115px){
+    .skill{
+        display: none;
+    }
+}
+@media only screen and (max-width:975px){
+    .projects{
+        display: none;
+    }
+    .nir{
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width:975px){
+    .botbox{
+        height: 750px;
+        align-items: baseline;
+        text-align: center;
+        
+    }
+    .nir{
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 50px ;
+    }
+    .detials{
+        margin-top: 400px;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    
+}
+@media only screen and (max-width:500px){
+   
+    .botbox{
+        height: 600px;
+        
+    }.nir{
+        height: 250px;
+        width: 250px;
+    }
+    .detials{
+        margin-top: 300px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:420px){
+    .nir{
+        height: 250px;
+        width: 250px;
+    }
+    .detials{
+
+        font-size: 18px;
+    }
+
+}

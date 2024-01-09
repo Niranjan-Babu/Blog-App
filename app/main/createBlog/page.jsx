@@ -63,7 +63,7 @@ const CreateBlog = () => {
 
         <TextField
           id="outlined-basic"
-          label="User Email"
+          label="User Email(must be unique)"
           type="email"
           variant="outlined"
           name="createremail"
@@ -84,6 +84,7 @@ const CreateBlog = () => {
           Save
         </button>
       </form>
+      
     </div>
   );
 };

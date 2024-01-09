@@ -14,6 +14,7 @@ const BlogMain = async ({searchParams}) => {
     <>
    
     <div className={styles.container}>
+      
         {blogs?.map((blog)=>(
             <div key={blog.id}>
             <CardPaper id={blog.id} title={blog.title} content={blog.content}/>
